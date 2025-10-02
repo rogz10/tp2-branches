@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accueil — V1</title>
+	<style>
+/* Header simple */
+html { font-family: Open Sans,sans-serif; }
+.header-isen { background: #fff; border-bottom: 1px solid #e5e5e5; }
+.header-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
+.header-logo img { height: 45px; width: auto; }
+.header-nav { background: #e30613; flex: 1; margin-left: 40px; }
+.header-nav ul { list-style: none; display: flex; justify-content: space-around; margin: 0; padding: 0; }
+.header-nav li { flex: 1; text-align: center; }
+.header-nav a { display: block; padding: 14px 10px; font-size: 1.2em; font-weight: bold; color: #fff; transition: background 0.2s; text-decoration: none; }
+.header-nav a:hover { text-decoration: underline; }
+
+/* Images grid (pluggin_images) */
+.dp-section { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.dp-section h2 { font-size: 24px; font-weight: 700; margin-bottom: 30px; color: #000; }
+.dp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.dp-card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; transition: transform 0.2s ease; }
+.dp-card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+.dp-card img { width: 100%; height: auto; display: block; }
+.dp-card p { padding: 10px 12px; font-weight: 700; margin: 0; }
+
+/* Blocks (pluggin_blocks) */
+.block-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.block-columns { display: flex; gap: 40px; flex-wrap: wrap; }
+.block-alternance { flex: 1 1 320px; border: 2px solid #c8102e; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.block-alternance img { width: 100%; height: auto; display: block; }
+.block-alternance-content { padding: 20px 24px; }
+.block-alternance-content h2 { font-size: 22px; margin: 0 0 10px; }
+.block-alternance-content p { margin: 0 0 12px; line-height: 1.6; color: #333; }
+.block-button { text-align: center; margin-top: 8px; }
+.block-button a { background-color: #e30613; color: #fff; display: inline-block; padding: .5rem 2rem; border-radius: 3.45rem; font-weight: 700; text-decoration: none; }
+.block-button a:hover { text-decoration: underline; }
+
+/* Footer simple */
+.site-footer { background: #000; color: #fff; padding: 40px 20px 20px; font-family: Arial, sans-serif; }
+.footer-container { display: flex; max-width: 1200px; margin: 0 auto; gap: 40px; flex-wrap: wrap; }
+.footer-col-logo { flex: 1; min-width: 220px; display: flex; flex-direction: column; }
+.footer-logo { height: 100px; margin-bottom: 15px; margin-top: 30px; }
+.footer-links-section { flex: 3; display: flex; flex-direction: column; }
+.footer-cities { font-size: 40px; font-weight: 700; text-align: left; margin-bottom: 20px; }
+.footer-bottom { text-align: center; padding-top: 15px; background-color: white; color: black; font-family: Arial, sans-serif; font-size: 14px; }
+	</style>
+</head>
+<body>
+
+<header class="header-isen">
+  <div class="header-container">
+    <a href="/" class="header-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+    </a>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="postbac.html">Post-Bac</a></li>
+        <li><a href="apprentissage.html">Apprentissage</a></li>
+        <li><a href="devenir_inge.html">Devenir ingénieur</a></li>
+        <li><a href="formations.html">Formations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Images (V1 index) -->
+<section class="dp-section">
+  <h2>Nos formations ingénieurs</h2>
+  <div class="dp-grid">
+    <a class="dp-card" href="https://isen-ouest.fr/domaine-professionnel/cybersecurite/" target="_blank" rel="noopener">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
+      <p>Cybersécurité</p>
+    </a>
+    <a class="dp-card" href="https://isen-ouest.fr/domaine-professionnel/developpement-logiciel/" target="_blank" rel="noopener">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+      <p>Développement logiciel</p>
+    </a>
+    <a class="dp-card" href="https://isen-ouest.fr/domaine-professionnel/intelligence-artificielle/" target="_blank" rel="noopener">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+      <p>Intelligence artificielle</p>
+    </a>
+  </div>
+</section>
+
+<!-- Blocks (V1 index) -->
+<div class="block-container">
+  <div class="block-columns">
+    <section class="block-alternance">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac">
+      <div class="block-alternance-content">
+        <h2>Formations post-bac</h2>
+        <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+        <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+        <div class="block-button">
+          <a href="#">Cycles post-bac</a>
+        </div>
+      </div>
+    </section>
+    <section class="block-alternance">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Ingénieur par alternance">
+      <div class="block-alternance-content">
+        <h2>Devenir ingénieur par alternance</h2>
+        <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et en entreprise en montant progressivement en compétence.</p>
+        <div class="block-button">
+          <a href="#">Formation d'ingénieurs sous statut apprenti</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-col-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" alt="ISEN Ouest" class="footer-logo">
+    </div>
+    <div class="footer-links-section">
+      <p class="footer-cies footer-cities">Texte à venir</p>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">&copy;</div>
+
+</body>
+</html>
+
 
